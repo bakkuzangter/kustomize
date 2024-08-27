@@ -12,7 +12,7 @@ metadata:
     alb.ingress.kubernetes.io/subnets: subnet-0963ba554f8ddd906,subnet-00ed5202e87787661
     alb.ingress.kubernetes.io/vpc-id: vpc-08a953f527759a1a0
 spec:
-  ingressClassName: alb  # 이 필드를 추가하여 IngressClassName을 설정
+  ingressClassName: alb  # 이 필드 추가하여 IngressClassName을 설정
   rules:
     - http:
         paths:
