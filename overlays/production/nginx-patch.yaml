@@ -2,10 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
-  namespace: nginx
 spec:
   template:
     spec:
       containers:
-        - name: nginx-container
-          image: 637423663330.dkr.ecr.ap-northeast-2.amazonaws.com/baggu-ecr:nginx-v1.49
+        - name: nginx
+          image: 637423663330.dkr.ecr.ap-northeast-2.amazonaws.com/baggu-ecr:nginx-v1.50

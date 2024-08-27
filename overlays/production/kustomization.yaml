@@ -12,8 +12,3 @@ patchesStrategicMerge:
   - nginx-patch.yaml
   - flask-patch.yaml
 
-images:
-  - name: 637423663330.dkr.ecr.ap-northeast-2.amazonaws.com/baggu-ecr
-    newTag: "nginx-v1.50"
-  - name: 637423663330.dkr.ecr.ap-northeast-2.amazonaws.com/baggu-ecr
-    newTag: "flask-v1.50"
