@@ -7,4 +7,4 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: 637423663330.dkr.ecr.ap-northeast-2.amazonaws.com/baggu-ecr:nginx-v1.51
+          image: 637423663330.dkr.ecr.ap-northeast-2.amazonaws.com/baggu-ecr:nginx-v1.52
