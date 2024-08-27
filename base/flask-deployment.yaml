@@ -1,0 +1,24 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-deployment
+  namespace: flask
+  labels:
+    app: flask
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask
+  template:
+    metadata:
+      labels:
+        app: flask
+    spec:
+      containers:
+      - name: flask
+        image: 637423663330.dkr.ecr.ap-northeast-2.amazonaws.com/baggu-ecr:flask-v1.49
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8000
