@@ -7,4 +7,8 @@ spec:
     spec:
       containers:
         - name: flask
+<<<<<<< HEAD
           image: 637423663330.dkr.ecr.ap-northeast-2.amazonaws.com/baggu-ecr:flask-v1.57
+=======
+          image: 637423663330.dkr.ecr.ap-northeast-2.amazonaws.com/baggu-ecr:flask-v1.53
+>>>>>>> 4092ac9021bce6982ef273f45813ea183a673712
