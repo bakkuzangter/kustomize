@@ -8,6 +8,6 @@ resources:
   - ../../base/flask-service.yaml
   - ../../base/ingress.yaml
 
-patches:
-  - nginx-patch.yaml
+patchesStrategicMerge:
   - flask-patch.yaml
+  - nginx-patch.yaml
