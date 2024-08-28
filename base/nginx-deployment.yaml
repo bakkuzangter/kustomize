@@ -14,7 +14,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: nginx-container
+      - name: nginx
         image: 637423663330.dkr.ecr.ap-northeast-2.amazonaws.com/baggu-ecr:nginx-v1.52
         imagePullPolicy: Always
         ports:
