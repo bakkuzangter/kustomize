@@ -2,11 +2,11 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - ./base/nginx-deployment.yaml
-  - ./base/nginx-service.yaml
-  - ./base/flask-deployment.yaml
-  - ./base/flask-service.yaml
-  - ./base/ingress.yaml
+  - ../../base/nginx-deployment.yaml
+  - ../../base/nginx-service.yaml
+  - ../../base/flask-deployment.yaml
+  - ../../base/flask-service.yaml
+  - ../../base/ingress.yaml
 
 patchesStrategicMerge:
   - flask-patch.yaml
