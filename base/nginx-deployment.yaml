@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: nginx-deployment
   namespace: nginx
+  labels:
+    app: nginx
 spec:
   replicas: 1
   selector:
@@ -19,3 +21,10 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 80
+        resources:    # 리소스 요청 및 제한 추가
+          requests:
+            cpu: "200m"
+            memory: "256Mi"
+          limits:
+            cpu: "500m"
+            memory: "512Mi"
